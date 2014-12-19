@@ -1,5 +1,14 @@
 #!/bin/sh
 
+cd /var/lib/jenkins/jobs/BJTU-nodejs
+cp -r workspace ~/BJTU-nodejs-project
+cd ~/BJTU-nodejs-project
+npm install --production
+forever restartall
+
+
+
+<<COMMENTBLOCK
 ssh -tt app@APP.SERVER.IP.ADDRESS <<EOF
 	cd ~/BJTU-nodejs-project
 	get pull
@@ -7,3 +16,4 @@ ssh -tt app@APP.SERVER.IP.ADDRESS <<EOF
 	forever restartall
 	exit
 EOF
+COMMENTBLOCK
