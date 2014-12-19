@@ -1,8 +1,8 @@
 #!/bin/sh
 
 cd /var/lib/jenkins/jobs/BJTU-nodejs
-cp -r workspace ~/BJTU-nodejs-project
-cd ~/BJTU-nodejs-project
+cp -r workspace /../home/ubuntu/BJTU-nodejs-project
+cd /../home/ubuntu/BJTU-nodejs-project
 npm install --production
 
 
