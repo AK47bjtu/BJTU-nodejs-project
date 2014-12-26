@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cd /var/lib/jenkins/jobs/BJTU-nodejs
-cp -r workspace /../home/ubuntu/nodejsProject/BJTU-nodejs-project
+sudo cp -r workspace/* /../home/ubuntu/nodejsProject/BJTU-nodejs-project
 cd /../home/ubuntu/nodejsProject/BJTU-nodejs-project
 npm install --production
 forever restart app.js
