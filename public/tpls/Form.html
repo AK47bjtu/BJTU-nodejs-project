@@ -1,0 +1,59 @@
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">中法班数学在线竞赛</div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form-horizontal" role="form" ng-controller="UserInfoCtrl">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">
+                                邮箱：
+                            </label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" placeholder="推荐使用163邮箱" ng-model="userInfo.email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">
+                                密码：
+                            </label>
+                            <div class="col-md-10">
+                                <input type="password" class="form-control" placeholder="只能是数字、字母、下划线" ng-model="userInfo.password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-4">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" ng-model="userInfo.autoLogin">自动登录
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-6">
+                                <button class="btn btn-default" ng-click="signFormData()">登陆</button>
+                                <button class="btn btn-default" ng-click="setFormData()">注册</button>
+                                <table class="table">
+                                    <!-- On rows -->
+                                    <tr class="active">...</tr>
+                                    <tr class="success">...</tr>
+
+
+                                    <!-- On cells (`td` or `th`) -->
+                                    <tr>
+                                        <td class="active">...</td>
+                                        <td class="success">...</td>
+
+                                    </tr>
+                                </table>
+                                <p><a href="#/list">下一页</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
