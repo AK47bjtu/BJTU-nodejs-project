@@ -147,7 +147,7 @@ io.on('connection', function (socket) {
         // io.emit('groupList',{users: users});
 
 
-        if (2 == numOfUsers) {
+        if (3 == numOfUsers) {
             questions = makeAllQuestions();
             // io.emit('testBegin', questions);
             io.sockets.in('room'+roomId).emit('testBegin', questions);
