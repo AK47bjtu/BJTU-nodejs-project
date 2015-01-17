@@ -66,7 +66,7 @@ app.use(function(err, req, res, next) {
     });
 });
 server.listen(process.env.PORT || 5000);
-console.log('Listening on port %d', server.address().port);
+// console.log('Listening on port %d', server.address().port);
 //
 //var server = app.listen((process.env.PORT || 5000), function() {
 //    console.log('Listening on port %d', server.address().port);
